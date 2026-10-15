@@ -1,5 +1,6 @@
 {
   "name": "test-expert",
+  "description": "The test-expert Claude Code subagent for reviewing automated tests.",
   "owner": {
     "name": "Andrew Brainwood",
     "url": "https://github.com/abrainwood"
