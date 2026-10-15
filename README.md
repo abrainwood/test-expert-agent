@@ -30,6 +30,8 @@ mkdir -p .claude/agents && cp agents/test-expert.md .claude/agents/
 
 It defaults to Opus at medium effort. Change `model` and `effort` in the frontmatter to suit.
 
+For architecture findings, the agent hands off using the vocabulary of two skills from [Matt Pocock's skills](https://github.com/mattpocock/skills): `/codebase-design` and `/improve-codebase-architecture`. They're optional. Without them the agent still files the same findings; you just pick up the architecture notes yourself.
+
 ## Use
 
 Ask Claude Code for a test review and it routes to the agent:
@@ -42,7 +44,7 @@ For a change review, give it the base ref so it can tell what the change introdu
 
 ## Does it work?
 
-It was evaluated against a small Python app seeded with 44 known test defects and 10 decoys (tests that look suspicious but are fine): [ref-app-for-test-review-agent-eval](https://github.com/abrainwood/ref-app-for-test-review-agent-eval).
+It was evaluated against [ledgerly](https://github.com/abrainwood/ref-app-for-test-review-agent-eval), a small public Python invoicing app (a calculator CLI, invoice pricing with volume discounts and progressive tax, a monthly customer report, an exchange-rates client) seeded with 44 known test defects and 10 decoys (tests that look suspicious but are fine). Point the agent at it to see what a review looks like.
 
 On Opus 5.5 at medium effort, reviewing the whole suite:
 
@@ -52,3 +54,7 @@ On Opus 5.5 at medium effort, reviewing the whole suite:
 | Plain Claude Code, asked to "run a test review of the codebase" | 0-32% (avg 9%) | ~$0.28 |
 
 Neither flagged a decoy. In 3 of 4 runs, plain Claude reviewed the latest commit instead of the tests. Small sample (2 and 4 runs), one app, one language: treat it as a signal, not a benchmark.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
