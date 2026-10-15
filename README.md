@@ -18,7 +18,15 @@ Every finding is filed P0 (tests that lie) to P3 (cleanup) with a concrete actio
 
 ## Install
 
-Copy the agent definition into your Claude Code agents directory:
+**As a plugin** (Claude Code 2.1.275 or later), in Claude Code:
+
+```
+/plugin install test-expert --marketplace abrainwood/test-expert-agent
+```
+
+Plugin updates arrive through `/plugin`. The agent's name gets the plugin prefix, `test-expert:test-expert`, so use that name if you refer to it from your own agents or skills.
+
+**Or copy the file** into your Claude Code agents directory. You manage updates yourself, and the agent keeps the plain name `test-expert`:
 
 ```bash
 # for all your projects

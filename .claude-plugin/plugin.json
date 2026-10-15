@@ -1,0 +1,19 @@
+{
+  "name": "test-expert",
+  "version": "1.0.0",
+  "description": "Reviews automated tests: finds tests that lie, flake, run slow or couple to structure, and prioritises them by impact.",
+  "author": {
+    "name": "Andrew Brainwood",
+    "url": "https://github.com/abrainwood"
+  },
+  "homepage": "https://github.com/abrainwood/test-expert-agent#readme",
+  "repository": "https://github.com/abrainwood/test-expert-agent",
+  "license": "MIT",
+  "keywords": [
+    "testing",
+    "code-review",
+    "tdd",
+    "test-quality",
+    "mutation-testing"
+  ]
+}
