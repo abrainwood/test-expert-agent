@@ -44,7 +44,7 @@ For a change review, give it the base ref so it can tell what the change introdu
 
 ## Does it work?
 
-It was evaluated against [ledgerly](https://github.com/abrainwood/ref-app-for-test-review-agent-eval), a small public Python invoicing app (a calculator CLI, invoice pricing with volume discounts and progressive tax, a monthly customer report, an exchange-rates client) seeded with 44 known test defects and 10 decoys (tests that look suspicious but are fine). Point the agent at it to see what a review looks like.
+It was evaluated against [ledgerly](https://github.com/abrainwood/ref-app-for-test-review-agent-eval), a small public Python invoicing app (a calculator CLI, invoice pricing with volume discounts and progressive tax, a monthly customer report, an exchange-rates client) seeded with 44 known test defects and 10 decoys (tests that look suspicious but are fine). Point the agent at it to see what a review looks like. The agent's own examples are set in the same invoicing world but are deliberately invented, not the planted defects, so the eval still measures what the agent notices rather than what it was told.
 
 On Opus 5.5 at medium effort, reviewing the whole suite:
 
