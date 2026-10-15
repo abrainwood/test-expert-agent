@@ -1,21 +1,21 @@
 {
-  "name": "test-expert",
-  "description": "The test-expert Claude Code subagent for reviewing automated tests.",
+  "name": "test-reviewer",
+  "description": "The test-reviewer Claude Code subagent for reviewing automated tests.",
   "owner": {
     "name": "Andrew Brainwood",
     "url": "https://github.com/abrainwood"
   },
   "plugins": [
     {
-      "name": "test-expert",
+      "name": "test-reviewer",
       "source": "./",
       "description": "Reviews automated tests: finds tests that lie, flake, run slow or couple to structure, and prioritises them by impact.",
       "author": {
         "name": "Andrew Brainwood",
         "url": "https://github.com/abrainwood"
       },
-      "homepage": "https://github.com/abrainwood/test-expert-agent#readme",
-      "repository": "https://github.com/abrainwood/test-expert-agent",
+      "homepage": "https://github.com/abrainwood/test-reviewer-agent#readme",
+      "repository": "https://github.com/abrainwood/test-reviewer-agent",
       "license": "MIT",
       "keywords": [
         "testing",
